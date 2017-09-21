@@ -107,6 +107,10 @@ nav{
     background-color: #24292e;
 }
 
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
 nav a{
     color: rgba(255,255,255,0.75);
     text-decoration: none;
