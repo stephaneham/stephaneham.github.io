@@ -109,14 +109,16 @@ nav{
 
 *{
     font-family: 'Open Sans', sans-serif;
-}
-
-nav{
-
+	color: #24292e;
 }
 
 nav li{
     float: left;
+}
+
+a{
+	text-decoration: none;
+	color: black;
 }
 
 nav a{
@@ -139,6 +141,108 @@ nav li:hover a{
 
 .bold{
     font-weight: 600;
+}
+
+.home h1{
+	font-size: 28px;
+	margin-top: 30px;
+	color: #999999;
+}
+
+.home h1::after{
+	content: "";
+	display: block;
+	width: 90%;
+	margin: 20px auto 0 auto;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.home h2{
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.home > p{
+	margin-top: 10px;
+}
+
+.projects-container{
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.projects-container .one-project{
+	display: block;
+	width: 50%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 20px;
+	box-sizing: border-box;
+	position: relative;
+	transition: transform 0.5s;
+}
+
+.projects-container .one-project .float-more{
+	right: 0;
+	top: 50%;
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	background-color: yellow;
+	text-align: center;
+	padding: 10px;
+}
+
+.projects-container .one-project .float-more span{
+	line-height: 20px;
+}
+
+.projects-container .one-project h3{
+	margin-top: 5px;
+	font-size: 22px;
+}
+
+.projects-container .one-project h3::after{
+	display: block;
+	content: "";
+	width: 40%;
+	margin: 5px 0 10px 0;
+	border-bottom: 2px solid black;
+}
+
+
+.projects-container .one-project img{
+	width: 100%;
+	display: block;
+}
+
+.projects-container .one-project .img-container{
+	position: relative;
+	overflow: hidden;
+}
+
+.projects-container .one-project .img-container::before{
+	z-index: 10;
+	content: "";
+	border-style: solid;
+    border-width: 125px 486px 0 0;
+    border-color: #fff transparent transparent;
+	transition: border .5s;
+	top: 0;
+    width: 0;
+    height: 0;
+    left: 0;
+    opacity: .1;
+    position: absolute;
+}
+
+.projects-container .one-project:hover .img-container::before{
+	border-width: 200px 600px 0 0;
+}
+
+.projects-container .one-project:hover{
+	transform: scale(1.05);
 }
 
 .clearfix:after {
