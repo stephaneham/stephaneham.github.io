@@ -140,3 +140,12 @@ nav li:hover a{
 .bold{
     font-weight: 600;
 }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
