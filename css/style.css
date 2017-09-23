@@ -292,3 +292,19 @@ nav li:hover a{
 footer{
 	height: 200px;
 }
+
+@media screen and (max-width: 768px){
+	nav{
+		height: 100px;
+	}
+	
+	nav a{
+		line-height: 100px;
+		padding: 0 30px;
+		font-size: 40px;
+	}
+	
+	.project ul{
+		margin-left: 50px;	
+	}
+}
