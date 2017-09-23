@@ -101,6 +101,10 @@ input, select {
     vertical-align:middle;
 }
 
+p{
+	line-height: 1.15;	
+}
+
 p a{
 	text-decoration: underline;
 }
