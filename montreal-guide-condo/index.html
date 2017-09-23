@@ -6,38 +6,78 @@ title: Montreal Guide Condo
   <h1> Montreal Guide Condo </h1>
   <p> During my time with Montreal Guide Condo, I rebuilt their web platform as their old installation did not meet their needs. This includes; </p>
   <ul>
-    <li> Modeling a relational MySQL Database to hold data about the listings, advertisements, areas etc... </li>
-    <li> Built a MVC backend in PHP for both the Montreal Guide Condo website and their content management system. </li>
-    <li> Built the frontend using HTML5/CSS3/Javascript/JQuery for the Montreal Guide Condo website and the content management system. </li>
-    <li> Analyzing user behavior on the website. </li>
-    <li> Handling SEO in the frontend and backend. </li>
+  <li> Modeling a relational MySQL Database to hold data about the listings, advertisements, areas etc... </li>
+  <li> Building a MVC backend in PHP for both the Montreal Guide Condo website and their content management system. </li>
+  <li> Building the frontend using HTML5/CSS3/Javascript/JQuery for the Montreal Guide Condo website and the content management system. </li>
+  <li> Analyzing user behavior on the website. </li>
+  <li> Handling SEO in the frontend and backend. </li>
   </ul>
-  
+
   <h2> Accomplishments </h2>
   <ul>
-    <li> Rebuilt an obsolete platform, leading to better usability for both visitors and employees. </li>
-    <li> Drastically decreasing the load time of pages, leading to user satisfaction, especially on mobile devices. </li>
-    <li> Improving the SEO of the website, making it triple its organic visitors per month over a year. </li>
+  <li> Rebuilt an obsolete platform, leading to better usability for both visitors and employees. </li>
+  <li> Drastically decreasing the load time of pages, leading to user satisfaction, especially on mobile devices. </li>
+  <li> Improving the SEO of the website, making it triple its organic visitors per month over a year. </li>
   </ul>
-  
+
   <h2> Features of Interest </h2>
-  
+
   <h3> Fully Responsive Website </h3>
-  
+
   <img src="/images/mtlgc-responsive.jpg"/>
-  
+
   <p> MtlGC has a fully responsive interface built in CSS, allowing visitors to browse the website at their leisure on any device. </p>
-  
+
   <h3> Improved Search Features </h3>
-  
+
   <img src="/images/mtlgc-search.jpg"/> 
-  
+
   <p> The old platform had a fairly rudimentary search feature. The new one bolsters multiple options to select from, as well as an autocomplete feature that uses AJAX to list regions and cities depending on their popularity. </p>
-  
+
+  <img src="/images/mtlgc-search2.jpg"/> 
+
+  <p> The new system also included an implementation of clusters over Google Maps, as well as a pagination system, which allows users to load extra pages of listings with the press of a button using AJAX calls. </p>
+
   <h3> Proximity Features </h3>
-  
+
   <img src="/images/mtlgc-close1.jpg"/> 
-  
-  <p> An algorithm allows the platform to showcase homes close to the one in the listing viewed. 
+
+  <p> A MySQL algorithm allows the platform to showcase real estate projects close to the one in the listing viewed. </p>
+
+  <img src="/images/mtlgc-close2.jpg"/> 
+
+  <p> This same algorithm was later re-used to show which real estate projects are close to metro stations in Montreal. </p>
+
+  <h3> Facebook API Implementation </h3>
+
+  <img src="/images/mtlgc-fb1.jpg"/>
+
+  <p> Users can log onto the website to use the "favorites" feature, which allows users to store listings in their "favorites" section. One of the ways they can log in is with Facebook. This implementation uses the PHP Facebook SDK. </p>
+
+  <h3> Paypal API Implementation </h3>
+
+  <img src="/images/mtlgc-paypal1.jpg"/>
+
+  <p> Advertisers can add their advertisements on the MtlGC website through an interface that uses the PHP Paypal SDK to communicate with Paypal. </p>
+
+  <h3> A Custom Content Management System </h3>
+
+  <img src="/images/cms-1.jpg"/> 
+
+  <p> The custom content management system is used to manage listings for both Montreal Guide Condo and Ma Residence Retraite. </p>
+
+  <img src="/images/cms-2.jpg"/> 
+
+  <p> You can browse all the listings and search for specific listings to edit using the search bar. </p>
+
+  <img src="/images/cms-3.jpg"/> 
+
+  <p> Within the add/edit screen, you can change the many properties of a listing. A feature fetches information from Wordpress posts from the Montreal Guide Condo blog to store them on the Montreal Guide Condo website. </p>
+
+  <img src="/images/cms-4.jpg"/> 
+
+  <img src="/images/cms-5.jpg"/> 
+
+  <p> A file upload system, as well as an implementation of Cropper ( <a href="https://fengyuanchen.github.io/cropper/">https://fengyuanchen.github.io/cropper/</a> ) and JQuery UI's Sortable ( <a href="https://jqueryui.com/sortable/">https://jqueryui.com/sortable/</a> ) allows the user to upload and crop images for a listing. Once cropped, the image is converted to many formats by PHP using the Imagick library. </p>
 
 </div>
