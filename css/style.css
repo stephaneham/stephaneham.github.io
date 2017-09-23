@@ -137,6 +137,7 @@ nav li:hover a{
     max-width: 1012px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 10px;
 }
 
 .bold{
