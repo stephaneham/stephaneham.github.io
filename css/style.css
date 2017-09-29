@@ -1,8 +1,8 @@
-/* 
+/*
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
+Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
@@ -15,7 +15,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
@@ -32,7 +32,7 @@ body {
 }
 
 article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
+footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
@@ -68,7 +68,7 @@ ins {
 /* change colours to suit your needs */
 mark {
     background-color:#ff9;
-    color:#000; 
+    color:#000;
     font-style:italic;
     font-weight:bold;
 }
@@ -91,7 +91,7 @@ table {
 hr {
     display:block;
     height:1px;
-    border:0;   
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
@@ -102,43 +102,28 @@ input, select {
 }
 
 p{
-	line-height: 1.15;	
+	line-height: 1.15;
 }
 
 p a{
 	text-decoration: underline;
 }
 
-nav{
-    width: 100%;
-    height: 40px;
-    background-color: #24292e;
-}
-
 *{
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 	color: #24292e;
 }
 
-nav li{
-    float: left;
+ul{
+  list-style:none;
 }
 
-a{
-	text-decoration: none;
-	color: black;
+html{
+	padding-bottom: 50px;
 }
 
-nav a{
-    color: rgba(255,255,255,0.75);
-    text-decoration: none;
-    line-height: 40px;
-    display: block;
-    padding: 0 10px;
-}
-
-nav li:hover a{
-    color: rgba(255,255,255,1);
+h1{
+	text-transform: uppercase;
 }
 
 .container{
@@ -148,171 +133,270 @@ nav li:hover a{
     padding: 0 10px;
 }
 
-.bold{
-    font-weight: 600;
+.section{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.home p{
-	text-align: justify;	
+header .name{
+  width: 100%;
+  text-align: center;
+  font-size: 70px;
+  margin-top: 20px;
 }
 
-.home h1, .project h1{
-	font-size: 28px;
-	margin-top: 30px;
-	color: #999999;
+header .name span{
+  letter-spacing: 21px;
 }
 
-.home h1::after, .project h1::after{
-	content: "";
+header .name-suffix{
+  margin-top: 10px;
+  text-align: center;
+}
+
+header .name-suffix{
+  text-transform: uppercase;
+}
+
+header nav{
+  margin-top: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+header ul{
+  display: flex;
+}
+
+header ul li{
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+header ul li a{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.presentation{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.presentation h1{
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.presentation p{
+  margin-top: 5px;
+}
+
+.presentation .links{
+  margin-top: 10px;
+}
+
+.presentation .links * {
+  float: left;
+}
+
+.presentation .links *:first-child{
+  margin-left: 0;
+}
+
+.presentation .links *{
+  margin-left: 5px;
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.projects h1{
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.projects > span{
+  margin-top: 5px;
+  width: 100%;
+}
+
+.projects .project-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.projects .project-list .project{
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.projects .project-list .project:nth-child(even){
+  padding-left: 10px;
+}
+
+.projects .project-list .project:nth-child(odd){
+  padding-right: 10px;
+}
+
+.projects .project-list .project .project-image{
+  width: 50%;
+}
+
+.projects .project-list .project .project-image img{
+	max-width: 150px;
 	display: block;
-	width: 90%;
-	margin: 20px auto 0 auto;
-	border-bottom: 1px solid #e5e5e5;
+	margin: auto;
 }
 
-.home h2{
+.projects .project-list .project .text{
+  width: 50%;
+}
+
+.contact{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.contact h1{
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.contact p{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.project-presentations{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.project-presentations h1{
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 22px;
+	font-weight: 400;
 }
 
-.home > p, .project p{
-	margin-top: 10px;
-}
-
-.project ul{
-	margin-top: 15px;
-	margin-left: 30px;
-}
-
-.project li{
+.project-presentations p{
 	margin-top: 5px;
 }
 
-.project h2{
-	font-size: 24px;
-	margin-top: 20px;
-	color: #999999;
-}
-
-.project h3{
-	font-size: 18px;
-	margin-top: 15px;
-	color: #999999;
-}
-
-.project img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+.project-presentations a{
 	margin-top: 10px;
-	border: 1px solid #999999;
-	max-width: 100%;
-}
-
-.projects-container{
-	margin-top: 20px;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.projects-container .one-project{
 	display: block;
-	width: 50%;
+	width: 100%;
+}
+
+.project-features{
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-top: 20px;
-	box-sizing: border-box;
-	position: relative;
-	transition: transform 0.5s;
-}
-
-.projects-container .one-project .float-more{
-	right: 0;
-	top: 50%;
-	position: absolute;
-	width: 100px;
-	height: 20px;
-	background-color: yellow;
-	text-align: center;
-	padding: 10px;
-}
-
-.projects-container .one-project .float-more span{
-	line-height: 20px;
-}
-
-.projects-container .one-project h3{
-	margin-top: 5px;
-	font-size: 22px;
-}
-
-.projects-container .one-project h3::after{
-	display: block;
-	content: "";
-	width: 40%;
-	margin: 5px 0 10px 0;
+	padding-bottom: 15px;
+	width: 100%;
 	border-bottom: 2px solid black;
 }
 
+.project-features h1{
+	margin-top: 20px;
+	font-size: 22px;
+	font-weight: 400;
+}
 
-.projects-container .one-project img{
+.one-feature{
 	width: 100%;
-	display: block;
+	height: 520px;
 }
 
-.projects-container .one-project .img-container{
-	position: relative;
-	overflow: hidden;
+.project-feature-img{
+	box-sizing: border-box;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.projects-container .one-project .img-container::before{
-	z-index: 10;
-	content: "";
-	border-style: solid;
-    	border-width: 125px 486px 0 0;
-    	border-color: #fff transparent transparent;
-	transition: border .5s;
-	top: 0;
-    	width: 0;
-    	height: 0;
-    	left: 0;
-    	opacity: .1;
-    	position: absolute;
+.project-feature-img img{
+	max-height: 100%;
 }
 
-.projects-container .one-project:hover .img-container::before{
-	border-width: 200px 600px 0 0;
+.project-desc{
+	box-sizing: border-box;
+	width: 100%;
+	height: 120px;
+	background-color: lightgray;
+	padding: 10px;
 }
 
-.projects-container .one-project:hover{
-	transform: scale(1.05);
+.project-desc h2{
+	padding-top: 10px;
+	font-size: 20px;
+	font-weight: 400;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+.project-desc p{
+	margin-top: 5px;
 }
 
-footer{
-	height: 200px;
+.bxslider-container{
+	width: 80%;
+	margin: 20px auto 0 auto;
 }
 
-@media screen and (max-width: 768px){
-	nav{
-		height: 100px;
-	}
-	
-	nav a{
-		line-height: 100px;
-		padding: 0 30px;
-		font-size: 40px;
-	}
-	
-	.project ul{
-		margin-left: 50px;	
-	}
+.project-services h1{
+	margin-top: 20px;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.project-services p{
+	margin-top: 5px;
+}
+
+.project-services ul{
+	margin-top: 20px;
+	list-style-type: disc;
+	padding-left: 30px;
+}
+
+.project-services li{
+	margin-top: 5px;
+}
+
+.project-banner{
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
 }
