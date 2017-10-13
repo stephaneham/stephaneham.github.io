@@ -400,3 +400,9 @@ header ul li a{
 	height: auto;
 	margin-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+	.projects .project-list .project {
+		width: 100%;
+	}
+}
