@@ -414,6 +414,10 @@ header ul li a{
 		padding-left: 0;	
 	}
 	
+	.projects .project-list .project:nth-child(odd) {
+		padding-right: 0;	
+	}
+	
 	.projects .project-list .project .project-image img{
 		max-width: 80%;
 	}
