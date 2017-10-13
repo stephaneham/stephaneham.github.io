@@ -405,4 +405,8 @@ header ul li a{
 	.projects .project-list .project {
 		width: 100%;
 	}
+	
+	.bxslider-container{
+		width: 100%;
+	}
 }
