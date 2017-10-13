@@ -417,4 +417,8 @@ header ul li a{
 	.projects .project-list .project .project-image img{
 		max-width: 80%;
 	}
+	
+	.project-desc {
+		height: 280px;	
+	}
 }
