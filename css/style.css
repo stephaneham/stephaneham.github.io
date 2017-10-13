@@ -409,4 +409,12 @@ header ul li a{
 	.bxslider-container{
 		width: 100%;
 	}
+	
+	.projects .project-list .project:nth-child(even){
+		padding-left: 0;	
+	}
+	
+	.projects .project-list .project .project-image img{
+		max-width: 80%;
+	}
 }
