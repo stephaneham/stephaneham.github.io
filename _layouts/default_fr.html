@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title> {{ page.title }} </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="/js/jquery.bxslider.min.js"></script>
+	<link href="/js/jquery.bxslider.css" rel="stylesheet" />
+  </head>
+
+  <body>
+	  <script>
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+			auto: true,
+			autoHover: true,
+		  });
+		});
+	</script>
+	  <main class="container {{ page.section }}">
+	      <header>
+		<div class="name">
+		  <span> STEPHANE HAMELIN </span>
+		</div>
+
+		<div class="name-suffix">
+		  <span> Web Developer | stephaneham@gmail.com </span>
+		</div>
+
+		<nav>
+		  <ul>
+		    <li> <a href="/"> About </a> </li>
+		    <li> <a href="https://drive.google.com/file/d/0B5zI2J8cqFYPY0tYSnpvMXdRdkE/view?usp=sharing"> Resume </a> </li>
+		    <li> <a href="/#contact"> Contact Me </a> </li>
+		  </ul>
+		</nav>
+	      </header>
+	  
+	  {{ content }}
+	  
+	  </main>
+  </body>
+
+  <footer>
+
+  </footer>
+
+
+</html>
